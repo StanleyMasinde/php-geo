@@ -1,0 +1,23 @@
+{
+    "name": "kenya/geonames",
+    "description": "A simple package to show locations in kenya",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Stanley Masinde",
+            "email": "stanleyloren@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php" : ">=5.6"
+    }, "files" : [
+        "devc_stuff/src/geonames/helpers.php"
+    ],
+      "autoload": {
+        "psr-4": {
+          "GeoController\\" : "devc_stuff/src/geonames/helpers.php"
+        }
+    }
+}
