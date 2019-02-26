@@ -1,15 +1,4 @@
 <?php
 
-require_once('../GeoController.php');
+require_once('');
 
-function getCities()
-{
-    return GeoController::getCities();
-}
-
-class demo
-{
-    
-}
-
-getCities();

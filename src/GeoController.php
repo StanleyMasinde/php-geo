@@ -1,4 +1,7 @@
 <?php
+namespace GeoController;
+
+
  class GeoController
  {
      protected $cities = [
@@ -19,12 +22,12 @@
 
          public function getCities()
          {
-             return $this->cities;
+            return $this->cities;
          }
 
 
          public function getCounties()
          {
-             return $this->cities;
+             return $this->counties;
          }
  }
