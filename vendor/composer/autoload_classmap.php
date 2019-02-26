@@ -6,4 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'GeoController' => $baseDir . '/src/GeoController.php',
+    'demo' => $baseDir . '/src/geonames/helpers.php',
 );

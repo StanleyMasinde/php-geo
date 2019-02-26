@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'GeoController\\' => array($baseDir . '/devc_stuff/src/geonames/helpers.php'),
+    'GeoController\\' => array($baseDir . '/src'),
 );

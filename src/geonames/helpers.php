@@ -7,4 +7,9 @@ function getCities()
     return GeoController::getCities();
 }
 
+class demo
+{
+    
+}
+
 getCities();

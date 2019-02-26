@@ -13,11 +13,14 @@
     "require": {
         "php" : ">=5.6"
     }, "files" : [
-        "devc_stuff/src/geonames/helpers.php"
+        "/src/geonames/helpers.php"
     ],
       "autoload": {
         "psr-4": {
-          "GeoController\\" : "devc_stuff/src/geonames/helpers.php"
-        }
+          "GeoController\\" : "src"
+        },
+        "classmap": [
+            "src"
+        ]
     }
 }

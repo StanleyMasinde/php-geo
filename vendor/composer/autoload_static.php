@@ -16,8 +16,13 @@ class ComposerStaticInit83adb3ff86ca6016feba1bde9d11006d
     public static $prefixDirsPsr4 = array (
         'GeoController\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/devc_stuff/src/geonames/helpers.php',
+            0 => __DIR__ . '/../..' . '/src',
         ),
+    );
+
+    public static $classMap = array (
+        'GeoController' => __DIR__ . '/../..' . '/src/GeoController.php',
+        'demo' => __DIR__ . '/../..' . '/src/geonames/helpers.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
@@ -25,6 +30,7 @@ class ComposerStaticInit83adb3ff86ca6016feba1bde9d11006d
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit83adb3ff86ca6016feba1bde9d11006d::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit83adb3ff86ca6016feba1bde9d11006d::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit83adb3ff86ca6016feba1bde9d11006d::$classMap;
 
         }, null, ClassLoader::class);
     }
